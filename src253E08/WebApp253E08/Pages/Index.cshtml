@@ -1,0 +1,18 @@
+﻿@page
+@{
+    double radio = 5;
+    double altura = 50;
+    double perimetro = Application253E08.Figura253E08.CalcularPerimetro(radio);
+    double area = Application253E08.Figura253E08.CalcularArea(radio);
+    double volumen = Application253E08.Figura253E08.CalcularVolumen(area, altura);
+ 
+}
+
+
+<h2>Resultados</h2>
+<ul>
+    <li>Perímetro: @perimetro.ToString("F2")</li>
+    <li>Área: @area.ToString("F2")</li>
+    <li>Volumen (como esfera): @volumen.ToString("F2")</li>
+</ul>
+
